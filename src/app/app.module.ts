@@ -2,6 +2,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 // Modulos
 import { PagesModule } from './pages/pages.module';
 
@@ -12,17 +13,17 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent
-  ],
+    ],
   imports: [
     BrowserModule,
     PagesModule,
-    APP_ROUTING,
-    FormsModule
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
