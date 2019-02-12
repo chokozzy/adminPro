@@ -1,16 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { SidebarService } from '../../services/service.index';
+import { UsuarioService } from '../../services/service.index';
 
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styles: []
+	selector: 'app-sidebar',
+	templateUrl: './sidebar.component.html',
+	styles: []
 })
 export class SidebarComponent implements OnInit {
+	constructor(public _sideBar: SidebarService, public _usuarioService: UsuarioService) {}
 
-  constructor(public _sideBar: SidebarService) { }
-
-  ngOnInit() {
-  }
-
+	ngOnInit() {}
 }

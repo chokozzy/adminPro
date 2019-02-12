@@ -1,7 +1,6 @@
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 
 // Modulos
 import { PagesModule } from './pages/pages.module';
@@ -13,22 +12,10 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 import { ServiceModule } from './services/service.module';
 
-
-
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-    RegisterComponent
-    ],
-  imports: [
-    BrowserModule,
-    PagesModule,
-    ServiceModule,
-    FormsModule,
-    APP_ROUTING
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [ AppComponent, LoginComponent, RegisterComponent ],
+	imports: [ BrowserModule, PagesModule, ServiceModule, FormsModule, ReactiveFormsModule, APP_ROUTING ],
+	providers: [],
+	bootstrap: [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {}

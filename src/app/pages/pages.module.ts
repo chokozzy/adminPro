@@ -13,6 +13,7 @@ import { PAGES_ROUTES } from './pages.routes';
 import { ChartsModule } from 'ng2-charts';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
   declarations: [ PagesComponent,
@@ -22,7 +23,8 @@ import { PromesasComponent } from './promesas/promesas.component';
                   IncrementadorComponent,
                   GraficoDonaComponent,
                   AccountSettingsComponent,
-                  PromesasComponent
+                  PromesasComponent,
+                  RxjsComponent
                 ],
   exports:       [ DashboardComponent,
                   ProgressComponent,
